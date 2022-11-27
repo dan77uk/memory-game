@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const iconsArray = [
+  {
+    type: "thirds",
+    image: require("./images/thirds.png"),
+  },
+  {
+    type: "ninety-five",
+    image: require("./images/ninety-five.png"),
+  },
+];
+
+// Shuffle iconsArray
+const swap = (array, i, j) => {
+  const temp = array[i];
+  array[i] = array[j];
+  array[j] = temp;
+};
+
+const shuffleIcons = (array) => {
+  const length = array.length;
+  for (let i = length; i > 0; i--) {
+    const randomIndex = Math.floor(Math.randon() * i);
+    const currentIndex = i - 1;
+    swap(array, currentIndex, randomIndex);
+  }
+  return array;
+};
+
+const App = () => {
+  return <div>App</div>;
+};
 
 export default App;
