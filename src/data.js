@@ -23,14 +23,14 @@ const iconsArray = [
     type: "iconF",
     image: "./images/iconF.png",
   },
-  {
-    type: "iconG",
-    image: "./images/iconG.png",
-  },
-  {
-    type: "iconH",
-    image: "./images/iconH.png",
-  },
+  // {
+  //   type: "iconG",
+  //   image: "./images/iconG.png",
+  // },
+  // {
+  //   type: "iconH",
+  //   image: "./images/iconH.png",
+  // },
 ];
 
 export default iconsArray;

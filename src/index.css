@@ -32,7 +32,7 @@ header {
   width: 100%;
   padding: 40px 0;
   background-color: var(--darkBlue);
-  color: var(--orangeHighlight);
+  color: rgb(232, 235, 238);
 }
 
 header section {
@@ -67,6 +67,10 @@ header h1 {
   background-color: rgb(51, 64, 88);
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.4s;
+}
+.icon:hover {
+  background-color: rgb(58, 73, 101);
 }
 
 .icon img {
@@ -78,7 +82,11 @@ header h1 {
 
 .is-inactive {
   cursor: none;
-  background-color: var(--blueGrey);
+  background-color: var(--orangeHighlight);
+}
+
+.is-inactive:hover {
+  background-color: var(--orangeHighlight);
 }
 
 .is-inactive img {
@@ -96,6 +104,7 @@ header h1 {
   border-top: solid 1px var(--blueGrey);
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .currentScoreboard p {
@@ -109,4 +118,7 @@ header h1 {
   color: var(--orangeHighlight);
   font-size: 4rem;
   font-weight: 800;
+}
+
+.currentScoreboard button {
 }
